@@ -1,0 +1,57 @@
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+  }
+  .email-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+  }
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .header img {
+    width: 150px;
+    height: auto;
+  }
+  .content p {
+    margin: 0 0 10px;
+  }
+  .content strong {
+    color: #3532a7;
+  }
+  .footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888;
+  }
+</style>
+
+<div class="email-container">
+  <div class="header">
+    <img src="https://api-vendas-syncupbrasil.s3.us-east-1.amazonaws.com/logo.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAS74TL62OKTP4KGSB%2F20241128%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241128T163937Z&X-Amz-Expires=300&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIFy%2FnxXp%2BtLNE3cxL3p6kV3OSGFUHAqVadrramAa6d8FAiEA33sTzOHw3co0fSjdcGEqWEeYFrWeHoqGpdyu5cx4mBcq7AIIYhAAGgwyMDU5MzA2MjQ2NjgiDKYA3QXakEylwO774SrJAiLyjRW2NsIbYBUMe%2Bqi2bacnW%2B0wYdpdBwhUX6SLUpS%2FKkOjNqWzuVvmrJdCoZDlTPG%2Fa8%2Bm1H1kwwanUjR6UfMiEMnWAz7TjQOoRX%2Fagl5xEmyQMKz3RTYJ3IrFzdkgZ7HVpt9XJVP63mrEzzDHsKJPZSUAOhOgXzDD216wlkHL4omCiNX3COirT7z9MUgKlWs4hpos7HwO4fAdcQztD9calEclZ0R2kPWXx3tWmrq9AqcAxWusZQUbmjz1Ayw9qp0ov3MA0OBnpeLYbJrUYbXxrMXMEXEbHxh9JXKk58AsxkIs5GN%2BUxK8h0pTIo7yNn3Lf7Zl0EMMuINYp8DOMTUobD%2FYTiZHiy6J6TwsRdlJCIppxuLHnOLcDW7tEWguYghEUokCuqzY%2Br9b5I65k8tKbIBtP2nC6YwxLu01V3EfMLzLY9QC3wGMJa5oroGOrMCdz5NGUPxZveWAdajuamxOoDqS8EyghdnfN8CO7m9pkYd5nToZX5Y2O1uT%2FmpTSBCAeKYXPJtuWXWHNvMxQ8x1AylCB%2BfgFweoH5odnDUHs35lzzFLusOzeX%2F3huTmlVak67w%2FlcCIVOvi3lARkpz%2FWRLeEeI03Eg65L0bGVKW%2FtwnWkoQQgKWLAb6dDs0soNxKTlrJtmZ48V8Y0C8JR8xCJMhPo4Xx0N7cDSSFhWTbMoWPsaFWlrLjQ4WfTLFKrD5Vc7QuXYrPWR3v2BfN9XawAs38XbHinSEX0nqpPAjm752rE7oZ0Ltp473KjQPV%2Fd5gazpo1adyAihyujCHpfCaJy2KpfpHvm%2BWGweHXYkV%2BsVGQdo%2FsXPkf7FbeIVQl8TfVtVZfkI2c1ef4GY8jeN9tSeA%3D%3D&X-Amz-Signature=61e5f9b9ab766c9b7740788873aa2681e2ed0f9d7c9ebd7a3c7dba24172e9da9&X-Amz-SignedHeaders=host&response-content-disposition=inline" alt="Logo da SyncUp Brasil" />
+  </div>
+  <div class="content">
+    <p><strong>Nova Mensagem de Cliente</strong></p>
+    <p>Você recebeu uma nova mensagem pelo site institucional:</p>
+    <p><strong>Nome:</strong> {{nome}}</p>
+    <p><strong>Email:</strong> {{email}}</p>
+    <p><strong>Mensagem:</strong></p>
+    <p>{{mensagem}}</p>
+  </div>
+  <div class="footer">
+    <p>Obrigado!</p>
+    <p><strong>Equipe SyncUp Brasil</strong></p>
+  </div>
+</div>
