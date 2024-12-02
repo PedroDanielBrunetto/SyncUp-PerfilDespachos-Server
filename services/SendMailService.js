@@ -31,7 +31,7 @@ class SendMailService {
         name: mailConfig.defaults.from.name,
         address: mailConfig.defaults.from.email,
       },
-      to: "pedrodanielbm@hotmail.com", // Destinatário
+      to: "wagner@perfildespachos.com.br", // Destinatário
       subject: "[SyncUp Brasil] Prospecção de Negócios",
       html,
     });
